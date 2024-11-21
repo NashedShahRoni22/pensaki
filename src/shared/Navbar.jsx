@@ -27,8 +27,8 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 border-b bg-white">
-      <section className="mx-5 flex items-center justify-between md:container md:mx-auto">
+    <nav className="sticky top-0 z-50 border-b bg-white px-5">
+      <section className="flex items-center justify-between md:container md:mx-auto">
         {/* Logo here */}
         <Link to={"/"} className="flex items-center">
           <img src={logo} className="h-16" alt="pensaki blackboard" />
