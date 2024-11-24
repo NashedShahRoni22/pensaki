@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 
 export default function ContactBar() {
   return (
-    <section className="bg-primary py-2 text-sm text-white">
+    <section className="bg-[#CC0000] py-2 text-sm text-white">
       <div className="flex justify-between px-5 md:container md:mx-auto">
         <div className="flex items-center gap-1.5">
           <FaLocationDot />8 rue de Dublin, 34200, Sète, France.

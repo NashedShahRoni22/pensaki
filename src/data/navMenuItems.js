@@ -4,7 +4,15 @@ const navMenuItems = [
     link: "/",
   },
   {
-    name: "About us",
+    name: "Features & Tools",
+    link: "/features",
+  },
+  {
+    name: "Our Products",
+    link: "/products",
+  },
+  {
+    name: "About Us",
     child: [
       {
         name: "Cookie policy",
@@ -21,15 +29,7 @@ const navMenuItems = [
     ],
   },
   {
-    name: "Features",
-    link: "/features",
-  },
-  {
-    name: "Products",
-    link: "/products",
-  },
-  {
-    name: "Global Support",
+    name: "Contact Us",
     link: "/support",
   },
 ];

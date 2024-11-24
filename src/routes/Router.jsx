@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layouts/Main";
 import Home from "../pages/Home/Home";
-import Features from "../pages/Features";
 import GlobalSupport from "../pages/GlobalSupport";
 import FAQ from "../pages/FAQ";
 import Products from "../pages/Products";
@@ -12,6 +11,7 @@ import Pensakidoc from "../components/Pensakidoc";
 import Pensakicloud from "../components/Pensakicloud";
 import Pensakipdf from "../components/Pensakipdf";
 import Pensakistudent from "../components/Pensakistudent";
+import Features from "../pages/Features/Features";
 
 export const router = createBrowserRouter([
   {
