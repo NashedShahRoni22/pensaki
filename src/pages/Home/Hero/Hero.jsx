@@ -4,19 +4,19 @@ import heroImg from "../../../assets/home/hero.png";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col gap-y-8 px-5 py-10 md:container md:mx-auto md:h-screen md:flex-row md:items-center md:py-20">
+    <section className="flex flex-col gap-8 px-5 py-10 md:container md:mx-auto md:h-screen lg:flex-row lg:items-center md:py-20">
       {/* Hero Details Container */}
-      <div className="w-full md:w-1/2">
-        <h1 className="text-center text-4xl font-medium text-dark md:text-left lg:text-5xl">
+      <div className="w-full lg:w-1/2">
+        <h1 className="text-center text-4xl font-medium text-dark lg:text-left lg:text-5xl">
           Craft, collaborate & convert - All in One Place
         </h1>
-        <p className="my-6 text-center text-mediumGray md:text-left">
+        <p className="my-6 text-center text-mediumGray lg:text-left">
           Create, collaborate & format documents with ease. From personal to
           professional use, Pensaki Blackboard brings powerful features at an
           affordable price.
         </p>
 
-        <div className="flex flex-col items-center gap-6 md:flex-row">
+        <div className="flex flex-col items-center gap-6 lg:flex-row">
           <Link
             to="/"
             className="hover:bg-primaryHover inline-block rounded border border-transparent bg-primary px-4 py-2 text-lg text-white transition-colors duration-200 ease-in-out"
@@ -38,11 +38,11 @@ export default function Hero() {
       </div>
 
       {/* Hero Image Container */}
-      <div className="flex w-full items-center justify-center md:w-1/2">
+      <div className="flex w-full items-center justify-center lg:w-1/2">
         <img
           src={heroImg}
           alt="pensaki blackboard"
-          className="h-[400px] object-contain"
+          className="h-[400px] md:h-[600px] object-cover"
         />
       </div>
     </section>

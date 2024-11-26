@@ -12,7 +12,7 @@ export default function Tools({ sectionRef }) {
           Powerful Features Built for you
         </h2>
 
-        <div className="grid grid-cols-1 gap-y-8 md:grid-cols-2 md:gap-12 md:gap-y-20 lg:grid-cols-3">
+        <div className="grid md:grid-cols-2 gap-5 lg:grid-cols-3">
           {featsAndTools.map((tool, i) => (
             <ToolCard2 key={i} data={tool} />
           ))}

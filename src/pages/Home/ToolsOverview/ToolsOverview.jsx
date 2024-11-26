@@ -12,7 +12,7 @@ export default function ToolsOverview() {
       </p>
 
       {/* Pensaki Tools Container */}
-      <div className="mt-12 grid grid-cols-1 gap-y-8 md:container md:mx-auto md:grid-cols-2 md:gap-x-8">
+      <div className="mt-12 grid gap-5 md:container md:mx-auto md:grid-cols-2">
         {toolsData.map((tool, i) => (
           <ToolCard key={i} data={tool} />
         ))}

@@ -11,7 +11,7 @@ export default function Features() {
         Blackboard
       </p>
 
-      <div className="mt-12 flex flex-wrap justify-between gap-x-4 gap-y-8 px-5 md:container md:mx-auto md:justify-center md:gap-x-16 md:gap-y-16">
+      <div className="mt-12 flex flex-wrap justify-between mx-5 md:container md:mx-auto md:justify-center gap-5">
         {featuresData.map((feat, i) => (
           <div
             key={i}
