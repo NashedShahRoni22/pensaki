@@ -75,6 +75,12 @@ export default function Navbar() {
               )}
             </div>
           ))}
+          <Link
+            to="/"
+            className="hover:bg-primary-hover inline-block rounded border border-transparent bg-primary px-4 py-2 text-sm text-white transition-colors duration-200 ease-in-out"
+          >
+            Sign in
+          </Link>
         </div>
 
         {/* Mobile Navbar Hamburger Button */}

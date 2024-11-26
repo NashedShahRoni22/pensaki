@@ -4,27 +4,28 @@ import heroImg from "../../../assets/home/hero.png";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col gap-8 px-5 py-10 md:container md:mx-auto md:h-screen lg:flex-row lg:items-center md:py-20">
+    <section className="flex flex-col gap-8 px-5 py-10 md:container md:mx-auto md:h-screen md:py-20 lg:flex-row lg:items-center">
       {/* Hero Details Container */}
       <div className="w-full lg:w-1/2">
         <h1 className="text-center text-4xl font-medium text-dark lg:text-left lg:text-5xl">
-          Craft, collaborate & convert - All in One Place
+          Craft Document, Collaborate, Share & Convert - all in one place
         </h1>
         <p className="my-6 text-center text-mediumGray lg:text-left">
-          Create, collaborate & format documents with ease. From personal to
-          professional use, Pensaki Blackboard brings powerful features at an
-          affordable price.
+          Create, collaborate & format Document, Assignment, Disseration,
+          Project with ease. From Personal to Professional use, Pensaki
+          Blackboard brings Powerfull Features with PDF convertor, agenda,
+          planner & note board at an Affordable Price
         </p>
 
         <div className="flex flex-col items-center gap-6 lg:flex-row">
           <Link
             to="/"
-            className="hover:bg-primaryHover inline-block rounded border border-transparent bg-primary px-4 py-2 text-lg text-white transition-colors duration-200 ease-in-out"
+            className="hover:bg-primary-hover inline-block rounded border border-transparent bg-primary px-4 py-2 text-lg text-white transition-colors duration-200 ease-in-out"
           >
             Sign in
           </Link>
           <Link
-            to="/"
+            to="/products"
             className="group inline-flex items-center gap-1 rounded border border-lightGray py-2 pl-4 pr-3 text-lg capitalize text-primary transition-colors duration-200 ease-in-out hover:border-[#FFD6D6] hover:bg-[#FFD6D6]"
           >
             <p className="flex items-center px-3">
@@ -42,7 +43,7 @@ export default function Hero() {
         <img
           src={heroImg}
           alt="pensaki blackboard"
-          className="h-[400px] md:h-[600px] object-cover"
+          className="h-[400px] object-cover md:h-[600px]"
         />
       </div>
     </section>

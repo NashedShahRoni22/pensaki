@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <BlackboardPackes />
+      {/* <BlackboardPackes /> */}
       <ToolsOverview />
       <Features />
     </main>

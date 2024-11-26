@@ -5,7 +5,7 @@ export default function ToolsOverview() {
   return (
     <section className="bg-[#fbfbfb] px-5 py-10 md:py-20">
       <h2 className="text-center text-4xl font-medium text-dark lg:text-5xl">
-        Tools Tailored for You
+        Office Tools Tailored for You
       </h2>
       <p className="mt-4 text-center text-lg text-primary">
         Get more done without having to leave Pensaki

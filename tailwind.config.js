@@ -13,8 +13,8 @@ export default {
         dark: "#202124",
         mediumGray: "#5f6368",
         lightGray: "#e1e3e6",
-        redAccentHover: "#c92323",
         vanilla: "#F3DFA2",
+        "primary-hover": "#c92323",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

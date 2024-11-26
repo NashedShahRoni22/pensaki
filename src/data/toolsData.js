@@ -8,11 +8,12 @@ const toolsData = [
     img: docImg,
     title: "Pensaki Doc Writer",
     subTitle:
-      "Streamline your Document Creation with Advanced Tools & Secure Integration.",
+      "Effortless Full Feature Document Formatting, Editing, Table, all tools included",
     features: [
       "Effortless Document Formatting & Editing",
       "Supports Collaborative Editing",
-      "Secure Cloud Storage Integration",
+      "Secure Private Cloud Storage Integration",
+      "Share or Download instantly in PDF or Doc",
     ],
   },
   {
@@ -21,9 +22,9 @@ const toolsData = [
     subTitle:
       "Simplify your Assignments with Tailored Tools & Seamless Conversions",
     features: [
-      "Built-in Citation & reference tools",
+      "Full Doc Writer Features with Built-in Citation & Reference Tools",
       "Easy PDF import & conversion",
-      "Customizable Assignment templates",
+      "Page attachments for reference sourcing",
     ],
   },
   {
