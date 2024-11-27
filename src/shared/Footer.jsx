@@ -94,7 +94,7 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="rounded-r bg-redAccentHover px-4 py-2.5 text-white"
+              className="rounded-r bg-primary-hover px-4 py-2.5 text-white"
             >
               Subscribe
             </button>

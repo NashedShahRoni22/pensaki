@@ -1,149 +1,146 @@
-import React from 'react';
+import { Link } from "react-router-dom";
+import { cookiesType } from "../data/cookiesType";
 
 function CookiePolicy() {
   return (
-    <div className="cookie-policy p-8 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-gray-800">
-        Cookie Policy for pensaki.org
+    <section className="mx-auto w-full max-w-5xl px-5 py-10 text-dark md:py-20">
+      <h1 className="mb-4 text-center text-3xl font-semibold">
+        Cookies Policy
       </h1>
-      <p className="mb-4 text-gray-700">
-        This is the Cookie Policy for pensaki.org, accessible from{' '}
-        <a href="https://pensaki.org/" className="text-blue-600 underline">
-          https://pensaki.org/
+      <p className="mb-20 text-center">
+        Below, you’ll find the Cookie Policy for{" "}
+        <Link to="https://pensaki.org/" className="text-primary">
+          Pensaki.org
+        </Link>
+        , Providing an
+        <br />
+        overview of how cookies are used to enhance your experience on our
+        website.
+      </p>
+
+      <h2 className="text-xl font-semibold">
+        What are Cookies and how does Pensaki use them?
+      </h2>
+      <p className="mb-2.5 mt-4">
+        Cookies are small pieces of text stored in web browsers to save
+        information about your interactions with websites. They are used to
+        store and receive identifiers and other data on your computer, phone, or
+        other devices. Additionally, other technologies, such as browser or
+        device storage and unique device identifiers, serve similar purposes.
+        For simplicity, we refer to all these technologies collectively as
+        &quot;cookies.&quot;
+      </p>
+      <p>
+        At Pensaki, we use cookies to enhance your experience on our platform,
+        including our website and apps. Cookies help us deliver tailored
+        services, improve website functionality, and understand how you interact
+        with our tools. This policy explains the types of cookies we use, how
+        they work, and the choices available to you.
+      </p>
+
+      <h2 className="mt-8 text-xl font-semibold">
+        Understanding Cookies at Pensaki
+      </h2>
+      <p className="mb-2.5 mt-4">
+        Pensaki uses cookies to enhance your experience and deliver essential
+        features on our platform. These cookies help us provide functionality,
+        improve performance, and offer tailored services.
+      </p>
+      <p>
+        While you have the option to disable cookies, please note that there are
+        no universal methods to do so without affecting the functionality and
+        features they enable. If you are unsure about the necessity of certain
+        cookies, we recommend keeping them enabled to ensure the best experience
+        with our services.
+      </p>
+
+      <h2 className="mt-8 text-xl font-semibold">
+        How can you manage Cookies?
+      </h2>
+      <p className="mb-2.5 mt-4">
+        You have control over cookies through your browser settings, allowing
+        you to prevent their storage or remove them at any time. Refer to your
+        browser’s Help section for guidance on managing cookies.
+      </p>
+      <p>
+        Please note, however, that disabling cookies may impact the
+        functionality of this website and others you visit. Certain features and
+        services rely on cookies to function properly, and turning them off may
+        result in a less optimal browsing experience. For the best experience,
+        we recommend keeping cookies enabled.
+      </p>
+
+      <h2 className="mt-8 text-xl font-semibold">
+        Types of Cookies Pensaki Uses
+      </h2>
+      <ul className="ml-6 list-disc">
+        <div className="mt-4 space-y-3">
+          {cookiesType.map(({ title, des }, i) => (
+            <li key={i}>
+              <h4 className="mb-1.5 font-medium">{title}</h4>
+              <p className="w-full max-w-3xl text-sm">{des}</p>
+            </li>
+          ))}
+        </div>
+      </ul>
+
+      <h2 className="mt-8 text-xl font-semibold">Third Party Cookies</h2>
+      <p className="my-4">
+        In certain cases, Pensaki uses cookies provided by trusted third parties
+        to enhance your experience on our site. Below are the types of
+        third-party cookies we employ:
+      </p>
+
+      <ul className="ml-5 list-disc">
+        <li>
+          <h4 className="mb-2 font-semibold">Analytics Cookies</h4>
+          <p className="w-full max-w-3xl text-sm">
+            Pensaki uses Google Analytics, one of the most trusted analytics
+            tools on the web, to understand how users interact with our site and
+            identify areas for improvement. These cookies may track metrics like
+            the time spent on the site, pages visited, and user behavior
+            patterns. This data helps us create more engaging and optimized
+            content. For additional details, visit the{" "}
+            <Link
+              to="https://marketingplatform.google.com/about/analytics/"
+              className="text-primary"
+            >
+              Official Google Analytics page.
+            </Link>
+          </p>
+        </li>
+        <li>
+          <h4 className="mb-1.5 mt-4 font-semibold">
+            Social Media Integration Cookies
+          </h4>
+          <p className="w-full max-w-3xl text-sm">
+            Our site includes social media buttons and/or plugins that let you
+            connect to your social networks in various ways. To enable these
+            features, social media platforms (such as [list integrated
+            platforms, e.g., Facebook, Twitter, LinkedIn]) may set cookies
+            through our site. These cookies can be used to enhance your profile
+            on those platforms or contribute to their data collection as per
+            their privacy policies.
+          </p>
+        </li>
+      </ul>
+
+      <h2 className="mt-8 text-xl font-semibold">Need More Information?</h2>
+      <p className="mb-2.5 mt-4">
+        We hope this explanation clarifies the use of cookies on Pensaki. If
+        you’re unsure about enabling or disabling cookies, it’s often best to
+        keep them enabled to ensure all site features function as intended.
+      </p>
+      <p className="mb-2.5">
+        For additional assistance, feel free to contact us at:
+      </p>
+      <p>
+        <span className="font-medium">Email:</span>{" "}
+        <a href="mailto:support@bobosohomail.com" className="text-primary">
+          support@bobosohomail.com
         </a>
       </p>
-
-      <h2 className="text-2xl font-semibold mb-4 text-gray-800">What Are Cookies</h2>
-      <p className="mb-4 text-gray-700">
-        As is common practice with almost all professional websites, this site uses cookies, 
-        which are tiny files that are downloaded to your computer, to improve your experience. 
-        This page describes what information they gather, how we use it, and why we sometimes 
-        need to store these cookies. We will also share how you can prevent these cookies 
-        from being stored; however, this may downgrade or ‘break’ certain elements of the site’s 
-        functionality.
-      </p>
-      <p className="mb-4 text-gray-700">
-        For more general information on cookies, see the{' '}
-        <a href="https://en.wikipedia.org/wiki/HTTP_cookie" className="text-blue-600 underline">
-          Wikipedia article on HTTP Cookies
-        </a>.
-      </p>
-
-      <h2 className="text-2xl font-semibold mb-4 text-gray-800">How We Use Cookies</h2>
-      <p className="mb-4 text-gray-700">
-        We use cookies for a variety of reasons detailed below. Unfortunately, in most cases, 
-        there are no industry-standard options for disabling cookies without completely disabling 
-        the functionality and features they add to this site. It is recommended that you leave on 
-        all cookies if you are not sure whether you need them or not in case they are used to provide 
-        a service that you use.
-      </p>
-
-      <h2 className="text-2xl font-semibold mb-4 text-gray-800">Disabling Cookies</h2>
-      <p className="mb-4 text-gray-700">
-        You can prevent the setting of cookies by adjusting the settings on your browser (see your 
-        browser Help for how to do this). Be aware that disabling cookies will affect the functionality 
-        of this and many other websites that you visit. Disabling cookies will usually result in also 
-        disabling certain functionality and features of this site. Therefore it is recommended that 
-        you do not disable cookies.
-      </p>
-
-      <h2 className="text-2xl font-semibold mb-4 text-gray-800">The Cookies We Set</h2>
-      <ul className="list-disc ml-6 text-gray-700 space-y-4">
-        <li>
-          <h3 className="text-lg font-semibold text-gray-800">Account related cookies</h3>
-          <p>
-            If you create an account with us, we will use cookies for the management of the signup 
-            process and general administration. These cookies will usually be deleted when you log 
-            out, though in some cases, they may remain afterward to remember your site preferences 
-            when logged out.
-          </p>
-        </li>
-        <li>
-          <h3 className="text-lg font-semibold text-gray-800">Login related cookies</h3>
-          <p>
-            We use cookies when you are logged in so that we can remember this fact. This prevents 
-            you from having to log in every single time you visit a new page. These cookies are 
-            typically removed or cleared when you log out to ensure that you can only access restricted 
-            features and areas when logged in.
-          </p>
-        </li>
-        <li>
-          <h3 className="text-lg font-semibold text-gray-800">Email newsletters related cookies</h3>
-          <p>
-            This site offers newsletter or email subscription services, and cookies may be used to 
-            remember if you are already registered and whether to show certain notifications which 
-            might only be valid to subscribed/unsubscribed users.
-          </p>
-        </li>
-        <li>
-          <h3 className="text-lg font-semibold text-gray-800">Orders processing related cookies</h3>
-          <p>
-            This site offers e-commerce or payment facilities, and some cookies are essential to 
-            ensure that your order is remembered between pages so that we can process it properly.
-          </p>
-        </li>
-        <li>
-          <h3 className="text-lg font-semibold text-gray-800">Surveys related cookies</h3>
-          <p>
-            From time to time, we offer user surveys and questionnaires to provide you with interesting 
-            insights, helpful tools, or to understand our user base more accurately. These surveys may 
-            use cookies to remember who has already taken part in a survey or to provide accurate results 
-            after page changes.
-          </p>
-        </li>
-        <li>
-          <h3 className="text-lg font-semibold text-gray-800">Forms related cookies</h3>
-          <p>
-            When you submit data through a form, such as on contact or comment pages, cookies may be set 
-            to remember your user details for future correspondence.
-          </p>
-        </li>
-        <li>
-          <h3 className="text-lg font-semibold text-gray-800">Site preferences cookies</h3>
-          <p>
-            To provide a great experience on this site, we offer the functionality to set your preferences. 
-            To remember your preferences, we need to set cookies so that this information can be called 
-            whenever you interact with a page affected by your preferences.
-          </p>
-        </li>
-      </ul>
-
-      <h2 className="text-2xl font-semibold mb-4 text-gray-800">Third Party Cookies</h2>
-      <p className="mb-4 text-gray-700">
-        In some special cases, we also use cookies provided by trusted third parties. This site uses 
-        Google Analytics, one of the most widespread and trusted analytics solutions on the web, for 
-        helping us understand how you use the site and ways we can improve your experience. These cookies 
-        may track things such as how long you spend on the site and the pages you visit so we can continue 
-        to produce engaging content.
-      </p>
-      <p className="mb-4 text-gray-700">
-        For more information on Google Analytics cookies, see the official{' '}
-        <a href="https://www.google.com/analytics" className="text-blue-600 underline">
-          Google Analytics page
-        </a>.
-      </p>
-      <p className="mb-4 text-gray-700">
-        We also use social media buttons and/or plugins on this site that allow you to connect with 
-        your social network in various ways. For these to work, the following social media sites, 
-        including {`{List the social networks whose features you have integrated with your site?:12}`}, 
-        will set cookies through our site, which may be used to enhance your profile on their site or 
-        contribute to the data they hold for various purposes outlined in their respective privacy policies.
-      </p>
-
-      <h2 className="text-2xl font-semibold mb-4 text-gray-800">More Information</h2>
-      <p className="mb-4 text-gray-700">
-        Hopefully, this has clarified things for you. If there is something that you aren’t sure about, 
-        it’s usually safer to leave cookies enabled in case it interacts with one of the features you 
-        use on our site.
-      </p>
-      <p className="mb-4 text-gray-700">
-        However, if you are still looking for more information, you can contact us through one of our 
-        preferred contact methods:
-      </p>
-      <ul className="list-disc ml-6 text-gray-700">
-        <li>Email: <a href="mailto:support@bobosohomail.com" className="text-blue-600 underline">support@bobosohomail.com</a></li>
-      </ul>
-    </div>
+    </section>
   );
 }
 
