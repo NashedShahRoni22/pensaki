@@ -1,5 +1,5 @@
-import logo from "../assets/logo/logo.png";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo/logo.png";
 
 export default function Footer() {
   const hostingProducts = [
@@ -72,6 +72,18 @@ export default function Footer() {
     {
       name: "Blogs",
       link: "/blogs",
+    },
+    {
+      name: "Cookie Policy",
+      link: "/cookie",
+    },
+    {
+      name: "Privacy Policy",
+      link: "/privacy",
+    },
+    {
+      name: "General Condition",
+      link: "/general",
     },
   ];
 

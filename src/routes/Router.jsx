@@ -2,7 +2,6 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../layouts/Main";
 import Home from "../pages/Home/Home";
 import GlobalSupport from "../pages/GlobalSupport";
-import FAQ from "../pages/FAQ";
 import Products from "../pages/Products";
 import CookiePolicy from "../pages/CookiePolicy";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
@@ -29,10 +28,6 @@ export const router = createBrowserRouter([
       {
         path: "/support",
         element: <GlobalSupport />,
-      },
-      {
-        path: "/faq",
-        element: <FAQ />,
       },
       {
         path: "/products",

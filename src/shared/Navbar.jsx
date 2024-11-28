@@ -37,7 +37,7 @@ export default function Navbar() {
         {/* Desktop Navbar Links */}
         <div className="hidden lg:flex lg:items-center lg:gap-5">
           {navMenuItems.map((mi, i) => (
-            <div key={i} className="text-sm text-mediumGray">
+            <div key={i} className="text-mediumGray">
               {mi.child ? (
                 <div className="group relative">
                   <span className="flex cursor-pointer items-center gap-1">
@@ -77,7 +77,7 @@ export default function Navbar() {
           ))}
           <Link
             to="/"
-            className="hover:bg-primary-hover inline-block rounded border border-transparent bg-primary px-4 py-2 text-sm text-white transition-colors duration-200 ease-in-out"
+            className="inline-block rounded border border-transparent bg-primary px-4 py-2 text-white transition-colors duration-200 ease-in-out hover:bg-primary-hover"
           >
             Sign in
           </Link>

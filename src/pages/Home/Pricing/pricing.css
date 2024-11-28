@@ -1,0 +1,29 @@
+#pricing .swiper {
+  position: static;
+}
+
+#pricing .swiper-button-prev,
+.swiper-button-next {
+  top: 0;
+  margin-top: 5px;
+  border: 1px solid #ff3434;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  color: #ff3434;
+}
+
+#pricing .swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#pricing .swiper-button-prev {
+  left: auto;
+  right: 80px;
+}
+
+#pricing .swiper-button-next {
+  right: 0px;
+}
