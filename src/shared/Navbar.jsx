@@ -76,7 +76,7 @@ export default function Navbar() {
             </div>
           ))}
           <Link
-            to="/"
+            to="https://office.bobosoho.com/login"
             className="inline-block rounded border border-transparent bg-primary px-4 py-2 text-white transition-colors duration-200 ease-in-out hover:bg-primary-hover"
           >
             Sign in

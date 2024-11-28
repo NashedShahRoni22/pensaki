@@ -19,8 +19,8 @@ export default function Hero() {
 
         <div className="flex flex-col items-center gap-6 lg:flex-row">
           <Link
-            to="/"
-            className="hover:bg-primary-hover inline-block rounded border border-transparent bg-primary px-4 py-2 text-lg text-white transition-colors duration-200 ease-in-out"
+            to="https://office.bobosoho.com/login"
+            className="inline-block rounded border border-transparent bg-primary px-4 py-2 text-lg text-white transition-colors duration-200 ease-in-out hover:bg-primary-hover"
           >
             Sign in
           </Link>

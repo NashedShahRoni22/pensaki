@@ -27,7 +27,7 @@ export default function Features() {
                 </span>
               </div>
             </div>
-            <p className="text-center text-sm">{feat.title}</p>
+            <p className="max-w-44 text-center text-sm">{feat.title}</p>
           </div>
         ))}
       </div>

@@ -23,13 +23,15 @@ const products = [
       "IFgaap Invoicing",
       "IFgaap GL Accounting",
     ],
-    price: "2.00",
+    prices: {
+      1: "2.00",
+    },
     image: individualPack,
     link: "https://www.bobosohomail.com/email_ins/signUp_email.php",
   },
   {
     id: 2,
-    title: "Individual Family & Friends Pack",
+    title: "Family & Friends Pack",
     subtitle:
       "Share the Pensaki Pack with up to 30 family members and friends ",
     features: [
@@ -39,7 +41,10 @@ const products = [
       "Share the Pensaki Pack with up to 30 family members and friends",
       "Ideal for group access to premium features at a shared cost or as a gift",
     ],
-    price: "9.50",
+    prices: {
+      15: "9.50",
+      30: "15.50",
+    },
     image: familyPack,
     link: "https://www.bobosohomail.com/email_ins/signUp_email.php",
   },
@@ -55,7 +60,11 @@ const products = [
       "Bobosoho integration with full features",
       "Administrator-controlled access to SaaS products",
     ],
-    price: "39.50",
+    prices: {
+      1: "6.00",
+      50: "25.50",
+      100: "49.50",
+    },
     image: businesspack,
     link: "https://www.bobosohomail.com/email_ins/signUp_email.php",
   },

@@ -48,7 +48,8 @@ const featuresData = [
   },
   {
     img: bobosoho,
-    title: "Bobosoho",
+    title:
+      "Bobosoho Private secured email, call voice video (conference) chat share platform for individuals & business",
   },
 ];
 
