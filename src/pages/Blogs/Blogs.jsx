@@ -5,8 +5,8 @@ export default function Blog() {
   const { pathname } = useLocation();
 
   return (
-    <section className="mx-5 min-h-screen pb-60 pt-10 md:container md:mx-auto md:pt-20">
-      <h2 className="text-center text-4xl font-medium text-dark lg:text-5xl">
+    <section className="mx-5 min-h-screen py-10 md:container md:mx-auto md:py-20">
+      <h2 className="text-navy text-center text-4xl font-medium lg:text-5xl">
         Recent Blogs & Information
       </h2>
       <p className="mt-4 text-center text-lg text-primary">
@@ -20,16 +20,13 @@ export default function Blog() {
                 <Link to="/">
                   <img src={data.image} alt="" className="rounded-t border-b" />
                 </Link>
-                <div className="px-4 py-6 text-gray-600">
-                  <Link to="/" className="text-xl font-semibold text-black">
+                <div className="text-uclablue px-4 py-6">
+                  <Link to="/" className="text-navy text-xl font-semibold">
                     {data.title}
                   </Link>
                   <p className="mb-4 mt-1">{data.date}</p>
-                  <p>{data.description}</p>
-                  <Link
-                    to="/"
-                    className="text-electricViolet mt-4 inline-block"
-                  >
+                  <p className="font-light">{data.description}</p>
+                  <Link to="/" className="mt-4 inline-block text-primary">
                     Read More
                   </Link>
                 </div>
@@ -40,12 +37,12 @@ export default function Blog() {
                 <Link to="/">
                   <img src={data.image} alt="" className="rounded-t border-b" />
                 </Link>
-                <div className="px-4 py-6 text-gray-600">
-                  <Link to="/" className="text-xl font-semibold text-black">
+                <div className="text-uclablue px-4 py-6">
+                  <Link to="/" className="text-navy text-xl font-semibold">
                     {data.title}
                   </Link>
                   <p className="mb-4 mt-1">{data.date}</p>
-                  <p>{data.description}</p>
+                  <p className="font-light">{data.description}</p>
                   <Link
                     to="/"
                     className="text-electricViolet mt-4 inline-block"

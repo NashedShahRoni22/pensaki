@@ -9,14 +9,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#ff3434",
+        primary: "#FF6B6B",
         dark: "#202124",
         mediumGray: "#5f6368",
         lightGray: "#e1e3e6",
         vanilla: "#F3DFA2",
-        "primary-hover": "#c92323",
+        "primary-hover": "#183446",
+        coral: "#D64045",
+        mint: "#E9FFF9",
+        skyblue: "#9ED8DB",
+        uclablue: "#467599",
+        navy: "#1D3354",
       },
       fontFamily: {
+        "meow-script": ["Meow Script", "cursive"],
         poppins: ["Poppins", "sans-serif"],
       },
 

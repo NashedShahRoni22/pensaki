@@ -27,17 +27,19 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 border-b bg-white px-5">
+    <nav className="bg-navy sticky top-0 z-50 border-b px-5 py-3">
       <section className="flex items-center justify-between md:container md:mx-auto">
         {/* Logo here */}
-        <Link to={"/"} className="flex items-center">
-          <img src={logo} className="h-16" alt="pensaki blackboard" />
+        <Link to={"/"} className="text-mint flex items-center gap-3">
+          {/* <img src={logo} className="h-16" alt="pensaki blackboard" /> */}
+          <span className="font-meow-script text-4xl">Pensaki</span>
+          <span className="text-[25px] text-primary">Blackboard</span>
         </Link>
 
         {/* Desktop Navbar Links */}
         <div className="hidden lg:flex lg:items-center lg:gap-5">
           {navMenuItems.map((mi, i) => (
-            <div key={i} className="text-mediumGray">
+            <div key={i}>
               {mi.child ? (
                 <div className="group relative">
                   <span className="flex cursor-pointer items-center gap-1">
@@ -50,7 +52,7 @@ export default function Navbar() {
                         to={mc.link}
                         key={i}
                         className={({ isActive }) =>
-                          `flex gap-1.5 capitalize duration-300 ease-linear hover:translate-x-3 hover:text-primary ${isActive && "font-medium text-primary"}`
+                          `flex gap-1.5 capitalize duration-300 ease-linear hover:translate-x-3 hover:text-primary ${isActive && "text-coral font-medium"}`
                         }
                       >
                         {mc.name}
@@ -66,7 +68,7 @@ export default function Navbar() {
                     `transition-colors duration-200 ease-linear ${
                       isActive
                         ? "font-medium text-primary"
-                        : "text-mediumGray hover:text-primary"
+                        : "text-mint hover:text-primary"
                     }`
                   }
                 >
@@ -77,7 +79,7 @@ export default function Navbar() {
           ))}
           <Link
             to="https://office.bobosoho.com/login"
-            className="inline-block rounded border border-transparent bg-primary px-4 py-2 text-white transition-colors duration-200 ease-in-out hover:bg-primary-hover"
+            className="hover:bg-coral inline-block rounded border border-transparent bg-primary px-4 py-2 text-white transition-colors duration-200 ease-in-out"
           >
             Sign in
           </Link>

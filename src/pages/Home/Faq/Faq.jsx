@@ -32,7 +32,7 @@ export default function Faq() {
 
   return (
     <section className="px-5 py-10 md:container md:mx-auto md:py-20">
-      <h2 className="text-center text-4xl font-medium text-dark lg:text-5xl">
+      <h2 className="text-navy text-center text-4xl font-medium lg:text-5xl">
         Need Help? We&apos;ve Got You Covered
       </h2>
       <p className="mt-4 text-center text-lg text-primary">
@@ -47,10 +47,10 @@ export default function Faq() {
             icon={<Icon id={item.id} open={open} />}
           >
             <AccordionHeader onClick={() => handleOpen(item.id)}>
-              <p className="py-2.5 text-dark">{item.title}</p>
+              <p className="text-navy py-2.5">{item.title}</p>
             </AccordionHeader>
             <AccordionBody>
-              <p className="p-4 font-poppins text-lg text-mediumGray">
+              <p className="text-uclablue p-4 font-poppins text-lg">
                 {item.body}
               </p>
             </AccordionBody>

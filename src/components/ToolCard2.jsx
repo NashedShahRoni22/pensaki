@@ -7,20 +7,22 @@ export default function ToolCard2({ data }) {
   return (
     <Link
       to={link}
-      className="group relative flex flex-col rounded-lg bg-white shadow"
+      className="hover:border-uclablue border-navy group relative flex flex-col rounded-lg border bg-white"
     >
-      <div className="px-4">
+      <div className="border-navy group-hover:border-uclablue border-b pb-5">
         <img
           src={image}
           alt=""
           className="size-28 rounded-full object-contain"
         />
-        <h3 className="flex-1 text-2xl font-medium capitalize">{title}</h3>
+        <h3 className="text-navy flex-1 px-4 text-2xl font-medium capitalize">
+          {title}
+        </h3>
       </div>
 
       <ul className="mt-5 flex-1 space-y-3 px-4">
         {features.map((tool, i) => (
-          <li key={i} className="flex gap-1 text-sm text-mediumGray">
+          <li key={i} className="text-uclablue flex gap-1 text-sm">
             <RxDotFilled className="mt-1 min-w-fit text-base text-black" />
             {tool}
           </li>
@@ -29,7 +31,7 @@ export default function ToolCard2({ data }) {
 
       <Link
         to={link}
-        className="mt-12 flex w-full items-center justify-center rounded-b-lg bg-primary/70 px-4 py-2.5 text-center text-white shadow group-hover:bg-primary"
+        className="bg-navy group-hover:bg-uclablue mt-12 flex w-full items-center justify-center rounded-b-lg px-4 py-2.5 text-center text-white shadow"
       >
         <p className="flex items-center px-3">
           <span className="transition-transform duration-300 group-hover:-translate-x-2">

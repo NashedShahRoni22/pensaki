@@ -11,10 +11,12 @@ export default function PricingCard({ product }) {
 
   return (
     <div className="flex flex-col justify-center">
-      <h2 className="text-center text-3xl lg:text-left">{product.title}</h2>
+      <h2 className="text-navy text-center text-3xl font-medium lg:text-left">
+        {product.title}
+      </h2>
 
       <div>
-        <div className="md:text-text-base my-3 flex items-center justify-between text-center font-medium text-primary lg:text-left">
+        <div className="md:text-text-base my-3 flex items-center justify-between text-center font-medium lg:text-left">
           <p className="md:text-text-base my-3 text-center font-medium text-primary lg:text-left">
             <span className="text-2xl">€{currentPrice}</span>
             /Year
@@ -24,7 +26,7 @@ export default function PricingCard({ product }) {
               {
                 <select
                   onChange={(e) => setSelectedUser(e.target.value)}
-                  className="rounded-md border border-red-200 bg-red-50 px-4 py-1 text-lg text-primary outline-none"
+                  className="rounded-md border border-red-100 bg-red-50 px-4 py-1 text-lg text-primary outline-none"
                 >
                   {Object.keys(product.prices).map((userCount) => (
                     <option
@@ -45,16 +47,16 @@ export default function PricingCard({ product }) {
       <div className="mb-8 mt-3 text-center lg:text-left">
         <Link
           to={product.link}
-          className="w-fit rounded bg-primary px-4 py-2 text-white transition-all duration-200 ease-linear hover:bg-primary-hover hover:outline hover:outline-red-100"
+          className="hover:bg-uclablue bg-navy w-fit rounded px-4 py-2 text-white transition-all duration-200 ease-linear hover:outline"
         >
           Buy Now
         </Link>
       </div>
 
-      <p className="mb-3 font-medium text-dark">Key Features :</p>
+      <p className="text-navy mb-3 font-medium">Key Features :</p>
       <ul className="space-y-1.5 font-light">
         {product.features.map((feat, i) => (
-          <li key={i} className="flex items-center gap-1 text-mediumGray">
+          <li key={i} className="text-uclablue flex items-center gap-1">
             <LuDot />
             {feat}
           </li>

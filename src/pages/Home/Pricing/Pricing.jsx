@@ -9,9 +9,9 @@ import "./pricing.css";
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="bg-[#fef9f3] px-5 py-10 md:py-20">
+    <section id="pricing" className="bg-mint px-5 py-10 md:py-20">
       <div className="md:container md:relative md:mx-auto">
-        <h2 className="text-4xl font-medium text-dark lg:text-5xl">
+        <h2 className="text-navy text-4xl font-medium lg:text-5xl">
           Plans & Pricing
         </h2>
         <p className="mt-4 text-lg text-primary">

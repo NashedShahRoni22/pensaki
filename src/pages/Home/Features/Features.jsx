@@ -3,8 +3,13 @@ import "./features.css";
 
 export default function Features() {
   return (
-    <section className="bg-[#fbfbfb] px-5 py-10 md:py-20">
-      <h2 className="text-center text-4xl font-medium text-dark lg:text-5xl">
+    <section
+      /*  style={{
+        background: `linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(${featuresBg}) center/cover`,
+      }} */
+      className="px-5 py-10 md:py-20"
+    >
+      <h2 className="text-navy text-center text-4xl font-medium lg:text-5xl">
         Included Features & Services
       </h2>
       <p className="mt-4 text-center text-lg text-primary">
@@ -21,7 +26,7 @@ export default function Features() {
                 alt=""
                 className="h-full w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-80 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="bg-navy absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <span className="text-center font-medium text-white">
                   {feat.title}
                 </span>

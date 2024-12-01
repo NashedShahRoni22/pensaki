@@ -25,6 +25,7 @@ const toolsData = [
       "Full Doc Writer Features with Built-in Citation & Reference Tools",
       "Easy PDF import & conversion",
       "Page attachments for reference sourcing",
+      "Seamless Collaboration to  work in Group Projects",
     ],
   },
   {
