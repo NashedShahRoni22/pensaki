@@ -8,7 +8,6 @@ import {
   MdKeyboardArrowUp,
 } from "react-icons/md";
 import navMenuItems from "../data/navMenuItems";
-import logo from "../assets/logo/logo.png";
 
 export default function Navbar() {
   const [showNav, setShowNav] = useState(false);
@@ -27,10 +26,10 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="bg-navy sticky top-0 z-50 border-b px-5 py-3">
+    <nav className="sticky top-0 z-50 bg-navy px-5 py-3">
       <section className="flex items-center justify-between md:container md:mx-auto">
         {/* Logo here */}
-        <Link to={"/"} className="text-mint flex items-center gap-3">
+        <Link to={"/"} className="flex items-center gap-3 text-mint">
           {/* <img src={logo} className="h-16" alt="pensaki blackboard" /> */}
           <span className="font-meow-script text-4xl">Pensaki</span>
           <span className="text-[25px] text-primary">Blackboard</span>
@@ -52,7 +51,7 @@ export default function Navbar() {
                         to={mc.link}
                         key={i}
                         className={({ isActive }) =>
-                          `flex gap-1.5 capitalize duration-300 ease-linear hover:translate-x-3 hover:text-primary ${isActive && "text-coral font-medium"}`
+                          `flex gap-1.5 capitalize duration-300 ease-linear hover:translate-x-3 hover:text-primary ${isActive && "font-medium text-coral"}`
                         }
                       >
                         {mc.name}
@@ -79,7 +78,7 @@ export default function Navbar() {
           ))}
           <Link
             to="https://office.bobosoho.com/login"
-            className="hover:bg-coral inline-block rounded border border-transparent bg-primary px-4 py-2 text-white transition-colors duration-200 ease-in-out"
+            className="inline-block rounded border border-transparent bg-primary px-4 py-2 text-white transition-colors duration-200 ease-in-out hover:bg-coral"
           >
             Sign in
           </Link>
