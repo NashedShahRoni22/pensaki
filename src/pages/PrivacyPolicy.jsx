@@ -1,6 +1,6 @@
 export default function PrivacyPolicy() {
   return (
-    <section className="mx-auto w-full max-w-5xl px-5 py-10 text-dark md:py-20">
+    <section className="mx-auto w-full max-w-5xl px-5 py-10 text-primary md:py-20">
       <h1 className="mb-4 text-center text-3xl font-semibold">
         Pensaki Privacy Policy
       </h1>

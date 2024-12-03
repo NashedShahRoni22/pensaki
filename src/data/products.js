@@ -1,4 +1,4 @@
-import individualPack from "../assets/products/individual.png";
+import individualPack from "../assets/shared/individual.png";
 import familyPack from "../assets/products/family.png";
 import businesspack from "../assets/products/business.png";
 

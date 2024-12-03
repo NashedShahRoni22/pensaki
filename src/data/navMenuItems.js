@@ -13,7 +13,7 @@ const navMenuItems = [
   },
   {
     name: "Contact Us",
-    link: "/support",
+    link: "/contact",
   },
 ];
 

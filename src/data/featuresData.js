@@ -13,52 +13,52 @@ const featuresData = [
   {
     img: docWriter,
     title: "Pensaki Doc Writer",
-    desc: "Advanced tools for creating and formatting documents.",
+    desc: "Create and format documents with powerful tools for individuals & businesses.",
   },
   {
     img: pdfConverter,
     title: "Pensaki PDF Converter",
-    desc: "Convert PDFs to editable formats easily.",
+    desc: "Convert PDFs to editable files with seamless and efficient features.",
   },
   {
     img: cloudStorage,
     title: "Pensaki Cloud Vault",
-    desc: "Secure cloud storage for files and media.",
+    desc: "Securely store, access, and manage your files with encrypted cloud storage.",
   },
   {
     img: hrPayroll,
     title: "Omada HR Payroll",
-    desc: "Effortless payroll processing for businesses.",
+    desc: "Simplify payroll processes and manage employee records with ease.",
   },
   {
     img: projectManager,
     title: "Omada Project Manager",
-    desc: "Streamlined project and task management.",
+    desc: "Organize and monitor projects efficiently with intuitive management tools.",
   },
   {
     img: payslips,
     title: "Clasico Payslips",
-    desc: "Quick and professional payslip generation.",
+    desc: "Generate detailed payslips quickly for businesses and employees alike.",
   },
   {
     img: cyberSecurity,
     title: "Bitss Cyber Security",
-    desc: "Robust tools for data and network security.",
+    desc: "Protect your network and data with advanced cyber security features.",
   },
   {
     img: invoicing,
     title: "IFGaap Invoicing",
-    desc: "Simplified invoicing and payment tracking.",
+    desc: "Simplify invoicing with professional tools for payments and tracking.",
   },
   {
     img: accounting,
     title: "IFGaap Accounting",
-    desc: "Complete bookkeeping and financial tools.",
+    desc: "Manage bookkeeping and financial reporting with efficient accounting tools.",
   },
   {
     img: bobosoho,
     title: "Bobosoho",
-    desc: "Private secured email, call voice video (conference) chat share platform for individuals & business",
+    desc: "Private secured email, call voice video (conference) chat share platform for individuals & business.",
   },
 ];
 

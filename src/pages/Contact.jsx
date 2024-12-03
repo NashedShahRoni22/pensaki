@@ -6,12 +6,12 @@ import Lottie from "react-lottie";
 import { Input } from "@material-tailwind/react";
 import { Option, Select, Spinner, Textarea } from "@material-tailwind/react";
 import { MdArrowOutward } from "react-icons/md";
-import logo from "../../src/assets/bitss_icon.png";
+import logo from "../../src/assets/logo/bitss.png";
 import Captcha from "./Captcha";
 import { smtpexpressClient } from "./smtp";
 import { useNavigate } from "react-router-dom";
 
-export default function GlobalSupport() {
+export default function Contact() {
   const navigate = useNavigate();
   const [loader, setLoader] = useState(false);
   const defaultOptions = {
@@ -169,38 +169,40 @@ export default function GlobalSupport() {
   return (
     <section className="mx-5 py-10 md:container md:mx-auto md:py-20">
       <div className="grid gap-8 md:gap-16 lg:grid-cols-2">
-        <div className="flex flex-col gap-4 md:gap-8">
-          <h5 className="font-semibold md:text-2xl">Contact Us</h5>
-          <p className="text-xl font-semibold text-primary md:text-3xl">
+        <div className="flex flex-col gap-6">
+          <h5 className="text-accent text-2xl font-medium">Contact Us</h5>
+          <p className="mb-4 text-xl font-semibold text-primary md:text-3xl">
             To make requests for further information, contact us via our social
-            channels.{" "}
+            channels
           </p>
           <div className="flex gap-5">
-            <div className="flex h-fit w-fit items-center justify-center rounded-xl bg-gray-100 p-4 text-primary shadow">
+            <div className="text-accent flex h-fit w-fit items-center justify-center rounded-xl bg-mint p-4 shadow">
               <BiHome className="text-xl md:text-2xl" />
             </div>
             <div className="flex flex-col gap-2">
-              <h5 className="font-semibold">Address</h5>
-              <p>8 rue de Dublin, 34200, Sète, France</p>
+              <h5 className="font-medium text-primary">Address</h5>
+              <p className="text-secondary text-sm">
+                8 rue de Dublin, 34200, Sète, France
+              </p>
             </div>
           </div>
           <div className="flex gap-5">
-            <div className="flex h-fit w-fit items-center justify-center rounded-xl bg-gray-100 p-4 text-primary shadow">
+            <div className="text-accent flex h-fit w-fit items-center justify-center rounded-xl bg-mint p-4 shadow">
               <BiPhone className="text-xl md:text-2xl" />
             </div>
             <div className="flex flex-col gap-2">
-              <h5 className="font-semibold">Phone</h5>
-              <p>+0033666100010</p>
+              <h5 className="font-medium text-primary">Phone</h5>
+              <p className="text-secondary text-sm">+0033666100010</p>
             </div>
           </div>
           <div className="flex gap-5">
-            <div className="flex h-fit w-fit items-center justify-center rounded-xl bg-gray-100 p-4 text-primary shadow">
+            <div className="text-accent flex h-fit w-fit items-center justify-center rounded-xl bg-mint p-4 shadow">
               <MdEmail className="text-xl md:text-2xl" />
             </div>
             <div className="flex flex-col gap-2">
-              <h5 className="font-semibold">Email</h5>
-              <p>support@bobosohomail.com</p>
-              <p>bfin@bobosohomail.com</p>
+              <h5 className="font-medium text-primary">Email</h5>
+              <p className="text-secondary text-sm">support@bobosohomail.com</p>
+              <p className="text-secondary text-sm">bfin@bobosohomail.com</p>
             </div>
           </div>
         </div>
@@ -209,10 +211,10 @@ export default function GlobalSupport() {
         </div>
       </div>
 
-      <h5 className="mt-10 text-end font-semibold md:mt-20 md:text-2xl">
+      <h5 className="text-accent text-right text-2xl font-medium">
         Send Message
       </h5>
-      <p className="mt-4 text-end text-xl font-semibold text-primary md:mt-8 md:text-3xl">
+      <p className="mt-3 text-right text-xl font-semibold text-primary md:text-3xl">
         Get in touch
       </p>
 
@@ -226,7 +228,7 @@ export default function GlobalSupport() {
             label="Enter Name"
             type="text"
             name="name"
-            color="indigo"
+            color="#1D3354"
             value={formData.name}
             onChange={handleChange}
             required
@@ -236,7 +238,7 @@ export default function GlobalSupport() {
             label="Enter Email"
             type="email"
             name="email"
-            color="indigo"
+            color="#1D3354"
             value={formData.email}
             onChange={handleChange}
             required
@@ -246,7 +248,7 @@ export default function GlobalSupport() {
             label="Enter Phone"
             type="number"
             name="phone"
-            color="indigo"
+            color="#1D3354"
             value={formData.phone}
             onChange={handleChange}
             required
@@ -254,7 +256,7 @@ export default function GlobalSupport() {
           <Select
             variant="static"
             label="Select Country"
-            color="indigo"
+            color="#1D3354"
             onChange={(value) => setFormData({ ...formData, country: value })}
             required
           >
@@ -269,7 +271,7 @@ export default function GlobalSupport() {
             label="Skype ID"
             type="text"
             name="skypeId"
-            color="indigo"
+            color="#1D3354"
             value={formData.skypeId}
             onChange={handleChange}
           />
@@ -278,7 +280,7 @@ export default function GlobalSupport() {
             label="Subject/Query"
             type="text"
             name="subject"
-            color="indigo"
+            color="#1D3354"
             value={formData.subject}
             onChange={handleChange}
             required
@@ -287,7 +289,7 @@ export default function GlobalSupport() {
             variant="static"
             label="Enter Message"
             name="message"
-            color="indigo"
+            color="#1D3354"
             value={formData.message}
             onChange={handleChange}
             required
@@ -301,7 +303,7 @@ export default function GlobalSupport() {
             label="Enter Captcha"
             type="text"
             name="captchaInput"
-            color="indigo"
+            color="#1D3354"
             value={formData.captchaInput}
             onChange={handleChange}
             required
@@ -319,7 +321,7 @@ export default function GlobalSupport() {
 
           <button
             type="submit"
-            className="group flex items-center justify-center gap-4 rounded border border-primary px-8 py-2 font-semibold text-primary duration-300 ease-linear hover:bg-black hover:bg-primary hover:text-white md:w-fit"
+            className="hover:bg-secondary hover:border-secondary group flex items-center justify-center gap-4 rounded border border-primary px-8 py-2 font-semibold text-primary duration-300 ease-linear hover:text-white md:w-fit"
           >
             {loader ? (
               <Spinner className="h-5 w-5" />

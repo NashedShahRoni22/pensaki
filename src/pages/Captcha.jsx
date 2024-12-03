@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 
 const Captcha = ({ onCaptchaGenerated }) => {
   const canvasRef = useRef(null);
@@ -12,16 +12,16 @@ const Captcha = ({ onCaptchaGenerated }) => {
     const question = `${num1} + ${num2}`;
 
     const canvas = canvasRef.current;
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext("2d");
     canvas.width = 100;
     canvas.height = 40;
 
     // Set the background color to green
-    context.fillStyle = 'blue';
+    context.fillStyle = "#FF6B6B";
     context.fillRect(0, 0, canvas.width, canvas.height);
 
-    context.font = '16px Arial';
-    context.fillStyle = 'white'; // Text color
+    context.font = "16px Arial";
+    context.fillStyle = "white"; // Text color
 
     // Measure the text width and height
     const textWidth = context.measureText(question).width;
@@ -42,7 +42,9 @@ const Captcha = ({ onCaptchaGenerated }) => {
   return (
     <div>
       <canvas ref={canvasRef} />
-      <button onClick={generateCaptcha} className='text-xs'>Refresh Captcha</button>
+      <button onClick={generateCaptcha} className="text-xs text-primary">
+        Refresh Captcha
+      </button>
     </div>
   );
 };

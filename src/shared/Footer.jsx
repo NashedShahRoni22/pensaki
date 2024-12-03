@@ -90,7 +90,7 @@ export default function Footer() {
   return (
     <footer>
       {/* email joining section */}
-      <section className="bg-coral py-10 text-center text-white md:px-5 md:py-20">
+      <section className="bg-accent-dark py-10 text-center text-white md:px-5 md:py-20">
         <div className="md:container md:mx-auto">
           <h2 className="text-2xl font-semibold tracking-wider lg:text-5xl">
             Join BFINIT Cosmopolitan
@@ -98,7 +98,7 @@ export default function Footer() {
           <p className="mt-2 text-lg tracking-wide">
             Enjoy up to 2 Months Free with Your Subscription!
           </p>
-          <div className="text-navy mx-auto mt-8 flex w-3/4 items-center justify-center md:w-2/5">
+          <div className="mx-auto mt-8 flex w-3/4 items-center justify-center text-primary md:w-2/5">
             <input
               className="w-full rounded-l px-4 py-2.5 shadow outline-none"
               type="email"
@@ -106,7 +106,7 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="bg-navy rounded-r px-4 py-2.5 text-white"
+              className="bg-accent rounded-r px-4 py-2.5 text-white"
             >
               Subscribe
             </button>
@@ -115,7 +115,7 @@ export default function Footer() {
       </section>
 
       {/* footer section */}
-      <section className="bg-navy text-white md:px-5">
+      <section className="bg-primary text-white md:px-5">
         <div className="mx-5 grid grid-cols-1 gap-8 py-10 md:container md:mx-auto md:grid-cols-2 md:py-28 lg:grid-cols-4">
           <div className="">
             <Link to={"/"}>
@@ -136,7 +136,7 @@ export default function Footer() {
           </div>
           {/* hosting products */}
           <div>
-            <h1 className="font-semibold text-primary underline underline-offset-8">
+            <h1 className="text-accent font-semibold underline underline-offset-8">
               Hosting Products
             </h1>
             <div className="ml-2 mt-4 flex flex-col gap-2">
@@ -144,7 +144,7 @@ export default function Footer() {
                 <Link
                   to={product.link}
                   key={i}
-                  className="flex gap-2.5 transition-all hover:text-primary"
+                  className="hover:text-accent flex gap-2.5 transition-all"
                 >
                   {product.name}
                 </Link>
@@ -153,7 +153,7 @@ export default function Footer() {
           </div>
           {/* other products */}
           <div>
-            <h1 className="font-semibold text-primary underline underline-offset-8">
+            <h1 className="text-accent font-semibold underline underline-offset-8">
               Other Products
             </h1>
             <div className="ml-2 mt-4 flex flex-col gap-2">
@@ -161,7 +161,7 @@ export default function Footer() {
                 <Link
                   to={product.link}
                   key={i}
-                  className="flex gap-2.5 transition-all hover:text-primary"
+                  className="hover:text-accent flex gap-2.5 transition-all"
                 >
                   {product.name}
                 </Link>
@@ -170,7 +170,7 @@ export default function Footer() {
           </div>
           {/* pages */}
           <div>
-            <h1 className="font-semibold text-primary underline underline-offset-8">
+            <h1 className="text-accent font-semibold underline underline-offset-8">
               Quick Links to BFINIT
             </h1>
             <div className="ml-2 mt-4 flex flex-col gap-2">
@@ -178,7 +178,7 @@ export default function Footer() {
                 <Link
                   to={product.link}
                   key={i}
-                  className="flex gap-2.5 transition-all hover:text-primary"
+                  className="hover:text-accent flex gap-2.5 transition-all"
                 >
                   {product.name}
                 </Link>

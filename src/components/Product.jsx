@@ -25,51 +25,48 @@ export default function Product({ product, i }) {
 
         {/* Product Details Div */}
         <div className="flex flex-col justify-center lg:w-1/2">
-          <h2 className="text-center text-3xl font-medium text-navy md:text-4xl lg:text-left">
+          <h2 className="text-3xl font-medium text-primary md:text-4xl">
             {product.title}
           </h2>
 
-          <div className="mt-4 flex items-center justify-between text-center font-medium text-primary lg:text-left">
-            <div>
-              <span className="text-3xl font-semibold">€{currentPrice}</span>
+          <div className="text-accent mt-4 flex items-center justify-between gap-2 font-medium">
+            <div className="min-w-fit">
+              <span className="text-2xl font-medium md:text-3xl">
+                €{currentPrice}
+              </span>
               /Year
             </div>
             {showSelect && (
-              <div className="flex items-center gap-3 text-dark">
-                {
-                  <select
-                    onChange={(e) => setSelectedUser(e.target.value)}
-                    className="max-w-fit rounded-md border border-red-100 bg-red-50 px-4 py-1.5 text-xl text-primary outline-none"
+              <select
+                onChange={(e) => setSelectedUser(e.target.value)}
+                className="text-accent max-w-fit rounded-md border border-red-100 bg-red-50 p-0.5 text-lg outline-none md:px-4 md:py-1.5 md:text-xl"
+              >
+                {Object.keys(product.prices).map((userCount) => (
+                  <option
+                    key={userCount}
+                    value={userCount}
+                    className="text-primary"
                   >
-                    {Object.keys(product.prices).map((userCount) => (
-                      <option
-                        key={userCount}
-                        value={userCount}
-                        className="text-dark"
-                      >
-                        Pricing for {userCount}{" "}
-                        {userCount > 1 ? "Users" : "User"}
-                      </option>
-                    ))}
-                  </select>
-                }
-              </div>
+                    Pricing for {userCount} {userCount > 1 ? "Users" : "User"}
+                  </option>
+                ))}
+              </select>
             )}
           </div>
 
-          <div className="mb-9 mt-11 text-center lg:text-left">
+          <div className="mb-9 mt-11 text-left lg:text-left">
             <Link
               to={product.link}
-              className="w-fit rounded bg-navy px-4 py-2 text-white transition-all duration-200 ease-linear hover:bg-uclablue"
+              className="hover:bg-secondary w-fit rounded bg-primary px-4 py-2 text-white transition-all duration-200 ease-linear"
             >
               Buy Now
             </Link>
           </div>
 
-          <p className="mb-3 font-medium text-navy">Key Features :</p>
+          <p className="mb-3 font-medium text-primary">Key Features :</p>
           <ul className="space-y-1.5 font-light">
             {product.features.map((feat, i) => (
-              <li key={i} className="flex items-center gap-1 text-uclablue">
+              <li key={i} className="text-secondary flex items-center gap-1">
                 <LuDot />
                 {feat}
               </li>

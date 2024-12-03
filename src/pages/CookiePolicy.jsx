@@ -3,13 +3,13 @@ import { cookiesType } from "../data/cookiesType";
 
 function CookiePolicy() {
   return (
-    <section className="mx-auto w-full max-w-5xl px-5 py-10 text-dark md:py-20">
+    <section className="mx-auto w-full max-w-5xl px-5 py-10 text-primary md:py-20">
       <h1 className="mb-4 text-center text-3xl font-semibold">
         Cookies Policy
       </h1>
       <p className="mb-20 text-center">
         Below, you’ll find the Cookie Policy for{" "}
-        <Link to="https://pensaki.org/" className="text-primary">
+        <Link to="https://pensaki.org/" className="text-accent">
           Pensaki.org
         </Link>
         , Providing an
@@ -103,7 +103,7 @@ function CookiePolicy() {
             content. For additional details, visit the{" "}
             <Link
               to="https://marketingplatform.google.com/about/analytics/"
-              className="text-primary"
+              className="text-accent"
             >
               Official Google Analytics page.
             </Link>
@@ -136,7 +136,7 @@ function CookiePolicy() {
       </p>
       <p>
         <span className="font-medium">Email:</span>{" "}
-        <a href="mailto:support@bobosohomail.com" className="text-primary">
+        <a href="mailto:support@bobosohomail.com" className="text-accent">
           support@bobosohomail.com
         </a>
       </p>

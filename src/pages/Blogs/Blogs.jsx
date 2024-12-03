@@ -6,10 +6,10 @@ export default function Blog() {
 
   return (
     <section className="mx-5 min-h-screen py-10 md:container md:mx-auto md:py-20">
-      <h2 className="text-navy text-center text-4xl font-medium lg:text-5xl">
+      <h2 className="text-center text-4xl font-medium text-primary lg:text-5xl">
         Recent Blogs & Information
       </h2>
-      <p className="mt-4 text-center text-lg text-primary">
+      <p className="text-accent mt-4 text-center text-lg">
         Get updated with the latest news and information from BoboSoho & BFINTIT
         Cosmopolitan
       </p>
@@ -20,13 +20,13 @@ export default function Blog() {
                 <Link to="/">
                   <img src={data.image} alt="" className="rounded-t border-b" />
                 </Link>
-                <div className="text-uclablue px-4 py-6">
-                  <Link to="/" className="text-navy text-xl font-semibold">
+                <div className="text-secondary px-4 py-6">
+                  <Link to="/" className="text-xl font-semibold text-primary">
                     {data.title}
                   </Link>
                   <p className="mb-4 mt-1">{data.date}</p>
                   <p className="font-light">{data.description}</p>
-                  <Link to="/" className="mt-4 inline-block text-primary">
+                  <Link to="/" className="text-accent mt-4 inline-block">
                     Read More
                   </Link>
                 </div>
@@ -37,8 +37,8 @@ export default function Blog() {
                 <Link to="/">
                   <img src={data.image} alt="" className="rounded-t border-b" />
                 </Link>
-                <div className="text-uclablue px-4 py-6">
-                  <Link to="/" className="text-navy text-xl font-semibold">
+                <div className="text-secondary px-4 py-6">
+                  <Link to="/" className="text-xl font-semibold text-primary">
                     {data.title}
                   </Link>
                   <p className="mb-4 mt-1">{data.date}</p>

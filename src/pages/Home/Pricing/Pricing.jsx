@@ -11,10 +11,10 @@ export default function Pricing() {
   return (
     <section id="pricing" className="px-5 py-10 md:py-20">
       <div className="md:container md:relative md:mx-auto">
-        <h2 className="text-4xl font-medium text-navy lg:text-5xl">
+        <h2 className="text-4xl font-medium text-primary lg:text-5xl">
           Plans & Pricing
         </h2>
-        <p className="mt-4 text-lg text-primary">
+        <p className="text-accent mt-4 text-lg">
           Flexible pricing options tailored to meet your needs
         </p>
 
@@ -29,7 +29,7 @@ export default function Pricing() {
             {products.map((product, i) => (
               <SwiperSlide
                 key={i}
-                className="h-auto max-w-xl rounded-3xl border bg-white px-6 py-10"
+                className="h-auto max-w-xl rounded-3xl border bg-white px-3 py-10 md:px-6"
               >
                 <PricingCard key={i} product={product} />
               </SwiperSlide>

@@ -26,13 +26,13 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 bg-navy px-5 py-3">
+    <nav className="sticky top-0 z-50 bg-primary px-5 py-3">
       <section className="flex items-center justify-between md:container md:mx-auto">
         {/* Logo here */}
         <Link to={"/"} className="flex items-center gap-3 text-mint">
           {/* <img src={logo} className="h-16" alt="pensaki blackboard" /> */}
           <span className="font-meow-script text-4xl">Pensaki</span>
-          <span className="text-[25px] text-primary">Blackboard</span>
+          <span className="text-accent text-[25px]">Blackboard</span>
         </Link>
 
         {/* Desktop Navbar Links */}
@@ -51,7 +51,7 @@ export default function Navbar() {
                         to={mc.link}
                         key={i}
                         className={({ isActive }) =>
-                          `flex gap-1.5 capitalize duration-300 ease-linear hover:translate-x-3 hover:text-primary ${isActive && "font-medium text-coral"}`
+                          `hover:text-accent flex gap-1.5 capitalize duration-300 ease-linear hover:translate-x-3 ${isActive && "text-accent-dark font-medium"}`
                         }
                       >
                         {mc.name}
@@ -66,8 +66,8 @@ export default function Navbar() {
                   className={({ isActive }) =>
                     `transition-colors duration-200 ease-linear ${
                       isActive
-                        ? "font-medium text-primary"
-                        : "text-mint hover:text-primary"
+                        ? "text-accent font-medium"
+                        : "hover:text-accent text-mint"
                     }`
                   }
                 >
@@ -78,80 +78,97 @@ export default function Navbar() {
           ))}
           <Link
             to="https://office.bobosoho.com/login"
-            className="inline-block rounded border border-transparent bg-primary px-4 py-2 text-white transition-colors duration-200 ease-in-out hover:bg-coral"
+            className="bg-accent hover:bg-accent-dark inline-block rounded border border-transparent px-4 py-2 text-white transition-colors duration-200 ease-in-out"
           >
             Sign in
           </Link>
         </div>
 
         {/* Mobile Navbar Hamburger Button */}
-        {showNav ? (
-          <button className="lg:hidden" onClick={() => setShowNav(!showNav)}>
-            <CgClose className="text-2xl" />
-          </button>
-        ) : (
-          <button className="lg:hidden" onClick={() => setShowNav(!showNav)}>
-            <FaBars className="text-xl" />
-          </button>
-        )}
+        <button className="lg:hidden" onClick={() => setShowNav(!showNav)}>
+          <FaBars className="text-xl text-mint" />
+        </button>
 
         {/* Mobile Dropdown Navbar Links */}
         {showNav && (
-          <div className="absolute left-0 top-16 flex min-w-full flex-col gap-4 bg-white p-5 md:px-14 lg:hidden">
-            {navMenuItems.map((mi, i) => (
-              <div key={i}>
-                {mi.child ? (
-                  <div>
-                    <div className="flex items-center justify-between text-sm">
-                      <p className="text-sm text-mediumGray">{mi.name}</p>
-                      {showChild !== i ? (
-                        <button
-                          onClick={() => setShowChild(i)}
-                          className="flex cursor-pointer items-center gap-1"
-                        >
-                          <MdKeyboardArrowDown className="text-xl" />
-                        </button>
-                      ) : (
-                        <button
-                          onClick={() => setShowChild("")}
-                          className="flex cursor-pointer items-center gap-1"
-                        >
-                          <MdKeyboardArrowUp className="text-xl" />
-                        </button>
+          <div className="fixed left-0 top-0 h-full w-full bg-white md:px-14 lg:hidden">
+            <div className="flex items-center justify-between bg-primary px-5 py-3">
+              <Link to={"/"} className="flex items-center gap-3 text-mint">
+                {/* <img src={logo} className="h-16" alt="pensaki blackboard" /> */}
+                <span className="font-meow-script text-4xl">Pensaki</span>
+                <span className="text-accent text-[25px]">Blackboard</span>
+              </Link>
+              <button
+                className="lg:hidden"
+                onClick={() => setShowNav(!showNav)}
+              >
+                <CgClose className="text-2xl text-mint" />
+              </button>
+            </div>
+
+            <div className="mt-4 flex flex-col gap-4 px-5">
+              {navMenuItems.map((mi, i) => (
+                <div key={i}>
+                  {mi.child ? (
+                    <div>
+                      <div className="flex items-center justify-between text-sm">
+                        <p className="text-sm text-primary">{mi.name}</p>
+                        {showChild !== i ? (
+                          <button
+                            onClick={() => setShowChild(i)}
+                            className="flex cursor-pointer items-center gap-1"
+                          >
+                            <MdKeyboardArrowDown className="text-xl" />
+                          </button>
+                        ) : (
+                          <button
+                            onClick={() => setShowChild("")}
+                            className="flex cursor-pointer items-center gap-1"
+                          >
+                            <MdKeyboardArrowUp className="text-xl" />
+                          </button>
+                        )}
+                      </div>
+                      {showChild === i && (
+                        <div className="ml-4 mt-4 flex flex-col gap-4">
+                          {mi.child.map((mc, i) => (
+                            <NavLink
+                              to={mc.link}
+                              key={i}
+                              onClick={() => setShowNav(!showNav)}
+                              className={({ isActive }) =>
+                                `flex gap-1.5 text-sm ${isActive ? "text-accent font-medium" : "hover:text-accent text-primary"}`
+                              }
+                            >
+                              <MdKeyboardArrowRight className="text-xl" />
+                              {mc.name}
+                            </NavLink>
+                          ))}
+                        </div>
                       )}
                     </div>
-                    {showChild === i && (
-                      <div className="ml-4 mt-4 flex flex-col gap-4">
-                        {mi.child.map((mc, i) => (
-                          <NavLink
-                            to={mc.link}
-                            key={i}
-                            onClick={() => setShowNav(!showNav)}
-                            className={({ isActive }) =>
-                              `flex gap-1.5 text-sm ${isActive ? "font-medium text-primary" : "text-mediumGray hover:text-primary"}`
-                            }
-                          >
-                            <MdKeyboardArrowRight className="text-xl" />
-                            {mc.name}
-                          </NavLink>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ) : (
-                  <NavLink
-                    to={mi.link}
-                    key={i}
-                    onClick={() => setShowNav(!showNav)}
-                    className={({ isActive }) =>
-                      `text-sm ${isActive ? "font-medium text-primary" : "text-mediumGray hover:text-primary"}`
-                    }
-                  >
-                    {mi.name}
-                  </NavLink>
-                )}
-              </div>
-            ))}
+                  ) : (
+                    <NavLink
+                      to={mi.link}
+                      key={i}
+                      onClick={() => setShowNav(!showNav)}
+                      className={({ isActive }) =>
+                        `text-sm ${isActive ? "text-accent font-medium" : "hover:text-accent text-primary"}`
+                      }
+                    >
+                      {mi.name}
+                    </NavLink>
+                  )}
+                </div>
+              ))}
+              <Link
+                to="https://office.bobosoho.com/login"
+                onClick={() => setShowNav(!showNav)}
+                className="hover:bg-secondary w-fit rounded border border-transparent bg-primary px-3 py-1 text-white transition-colors duration-200 ease-in-out"
+              >
+                Sign in
+              </Link>
+            </div>
           </div>
         )}
       </section>

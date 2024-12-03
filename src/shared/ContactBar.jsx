@@ -7,13 +7,13 @@ export default function ContactBar() {
     <section className="bg-skyblue py-2 text-sm">
       <div className="flex justify-between px-5 md:container md:mx-auto">
         <div className="flex items-center gap-1.5">
-          <FaLocationDot className="text-uclablue text-lg" />8 rue de Dublin,
+          <FaLocationDot className="text-secondary text-lg" />8 rue de Dublin,
           34200, Sète, France.
         </div>
 
         <div className="flex items-center gap-4 md:gap-8">
           <a href="tel:+33666100010" className="flex items-center gap-2.5">
-            <BiPhoneCall className="text-uclablue text-xl" />
+            <BiPhoneCall className="text-secondary text-xl" />
             <span className="hidden lg:block">+ 33 6 66 10 00 10</span>
           </a>
 
@@ -21,7 +21,7 @@ export default function ContactBar() {
             href="mailto:support@bobosohomail.com"
             className="flex items-center gap-2.5"
           >
-            <MdEmail className="text-uclablue text-xl" />
+            <MdEmail className="text-secondary text-xl" />
             <span className="hidden lg:block">support@bobosohomail.com</span>
           </a>
         </div>

@@ -5,8 +5,8 @@ export default function Tools({ sectionRef }) {
   return (
     <section ref={sectionRef}>
       <div className="px-5 py-10 md:container md:mx-auto md:py-20">
-        <p className="mb-4 text-center text-xl text-primary">Pensaki Tools</p>
-        <h2 className="text-navy mb-12 text-center text-4xl font-medium lg:text-5xl">
+        <p className="text-accent mb-4 text-center text-xl">Pensaki Tools</p>
+        <h2 className="mb-12 text-center text-4xl font-medium text-primary lg:text-5xl">
           Powerful Features Built for you
         </h2>
 
