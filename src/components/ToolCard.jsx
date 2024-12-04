@@ -5,7 +5,7 @@ export default function ToolCard({ data }) {
   const { img, title, subTitle, features } = data;
 
   return (
-    <div className="rounded border bg-mint px-4 pb-8 pt-6">
+    <div className="rounded border px-4 pb-8 pt-6">
       <div className="flex items-center gap-2.5 border-b pb-2.5 text-primary">
         <img src={img} className="size-20" />
         <div>

@@ -90,7 +90,7 @@ export default function Footer() {
   return (
     <footer>
       {/* email joining section */}
-      <section className="bg-accent-dark py-10 text-center text-white md:px-5 md:py-20">
+      <section className="bg-gradient-to-br from-mint to-skyblue py-10 text-center text-primary md:px-5 md:py-20">
         <div className="md:container md:mx-auto">
           <h2 className="text-2xl font-semibold tracking-wider lg:text-5xl">
             Join BFINIT Cosmopolitan
