@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logo/logo.png";
 
 export default function Footer() {
   const hostingProducts = [
@@ -106,7 +105,7 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="bg-accent rounded-r px-4 py-2.5 text-white"
+              className="rounded-r bg-accent px-4 py-2.5 text-white"
             >
               Subscribe
             </button>
@@ -118,8 +117,10 @@ export default function Footer() {
       <section className="bg-primary text-white md:px-5">
         <div className="mx-5 grid grid-cols-1 gap-8 py-10 md:container md:mx-auto md:grid-cols-2 md:py-28 lg:grid-cols-4">
           <div className="">
-            <Link to={"/"}>
-              <img className="w-44" src={logo} alt="bobosoho logo" />
+            {/* Logo here */}
+            <Link to={"/"} className="inline-flex flex-col text-mint">
+              <span className="font-meow-script text-4xl">Pensaki</span>
+              <span className="text-[25px] text-accent">Blackboard</span>
             </Link>
             <p className="mt-3 text-2xl">By BFINIT Cosmopolitan</p>
             <p className="mb-6 mt-3">
@@ -136,7 +137,7 @@ export default function Footer() {
           </div>
           {/* hosting products */}
           <div>
-            <h1 className="text-accent font-semibold underline underline-offset-8">
+            <h1 className="font-semibold text-accent underline underline-offset-8">
               Hosting Products
             </h1>
             <div className="ml-2 mt-4 flex flex-col gap-2">
@@ -144,7 +145,7 @@ export default function Footer() {
                 <Link
                   to={product.link}
                   key={i}
-                  className="hover:text-accent flex gap-2.5 transition-all"
+                  className="flex gap-2.5 transition-all hover:text-accent"
                 >
                   {product.name}
                 </Link>
@@ -153,7 +154,7 @@ export default function Footer() {
           </div>
           {/* other products */}
           <div>
-            <h1 className="text-accent font-semibold underline underline-offset-8">
+            <h1 className="font-semibold text-accent underline underline-offset-8">
               Other Products
             </h1>
             <div className="ml-2 mt-4 flex flex-col gap-2">
@@ -161,7 +162,7 @@ export default function Footer() {
                 <Link
                   to={product.link}
                   key={i}
-                  className="hover:text-accent flex gap-2.5 transition-all"
+                  className="flex gap-2.5 transition-all hover:text-accent"
                 >
                   {product.name}
                 </Link>
@@ -170,7 +171,7 @@ export default function Footer() {
           </div>
           {/* pages */}
           <div>
-            <h1 className="text-accent font-semibold underline underline-offset-8">
+            <h1 className="font-semibold text-accent underline underline-offset-8">
               Quick Links to BFINIT
             </h1>
             <div className="ml-2 mt-4 flex flex-col gap-2">
@@ -178,7 +179,7 @@ export default function Footer() {
                 <Link
                   to={product.link}
                   key={i}
-                  className="hover:text-accent flex gap-2.5 transition-all"
+                  className="flex gap-2.5 transition-all hover:text-accent"
                 >
                   {product.name}
                 </Link>

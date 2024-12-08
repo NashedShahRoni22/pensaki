@@ -30,9 +30,8 @@ export default function Navbar() {
       <section className="flex items-center justify-between md:container md:mx-auto">
         {/* Logo here */}
         <Link to={"/"} className="flex items-center gap-3 text-mint">
-          {/* <img src={logo} className="h-16" alt="pensaki blackboard" /> */}
           <span className="font-meow-script text-4xl">Pensaki</span>
-          <span className="text-accent text-[25px]">Blackboard</span>
+          <span className="text-[25px] text-accent">Blackboard</span>
         </Link>
 
         {/* Desktop Navbar Links */}
@@ -51,7 +50,7 @@ export default function Navbar() {
                         to={mc.link}
                         key={i}
                         className={({ isActive }) =>
-                          `hover:text-accent flex gap-1.5 capitalize duration-300 ease-linear hover:translate-x-3 ${isActive && "text-accent-dark font-medium"}`
+                          `flex gap-1.5 capitalize duration-300 ease-linear hover:translate-x-3 hover:text-accent ${isActive && "font-medium text-accent-dark"}`
                         }
                       >
                         {mc.name}
@@ -66,8 +65,8 @@ export default function Navbar() {
                   className={({ isActive }) =>
                     `transition-colors duration-200 ease-linear ${
                       isActive
-                        ? "text-accent font-medium"
-                        : "hover:text-accent text-mint"
+                        ? "font-medium text-accent"
+                        : "text-mint hover:text-accent"
                     }`
                   }
                 >
@@ -78,7 +77,7 @@ export default function Navbar() {
           ))}
           <Link
             to="https://office.bobosoho.com/login"
-            className="bg-accent hover:bg-accent-dark inline-block rounded border border-transparent px-4 py-2 text-white transition-colors duration-200 ease-in-out"
+            className="inline-block rounded border border-transparent bg-accent px-4 py-2 text-white transition-colors duration-200 ease-in-out hover:bg-accent-dark"
           >
             Sign in
           </Link>
@@ -96,7 +95,7 @@ export default function Navbar() {
               <Link to={"/"} className="flex items-center gap-3 text-mint">
                 {/* <img src={logo} className="h-16" alt="pensaki blackboard" /> */}
                 <span className="font-meow-script text-4xl">Pensaki</span>
-                <span className="text-accent text-[25px]">Blackboard</span>
+                <span className="text-[25px] text-accent">Blackboard</span>
               </Link>
               <button
                 className="lg:hidden"
@@ -137,7 +136,7 @@ export default function Navbar() {
                               key={i}
                               onClick={() => setShowNav(!showNav)}
                               className={({ isActive }) =>
-                                `flex gap-1.5 text-sm ${isActive ? "text-accent font-medium" : "hover:text-accent text-primary"}`
+                                `flex gap-1.5 text-sm ${isActive ? "font-medium text-accent" : "text-primary hover:text-accent"}`
                               }
                             >
                               <MdKeyboardArrowRight className="text-xl" />
@@ -153,7 +152,7 @@ export default function Navbar() {
                       key={i}
                       onClick={() => setShowNav(!showNav)}
                       className={({ isActive }) =>
-                        `text-sm ${isActive ? "text-accent font-medium" : "hover:text-accent text-primary"}`
+                        `text-sm ${isActive ? "font-medium text-accent" : "text-primary hover:text-accent"}`
                       }
                     >
                       {mi.name}
@@ -164,7 +163,7 @@ export default function Navbar() {
               <Link
                 to="https://office.bobosoho.com/login"
                 onClick={() => setShowNav(!showNav)}
-                className="hover:bg-secondary w-fit rounded border border-transparent bg-primary px-3 py-1 text-white transition-colors duration-200 ease-in-out"
+                className="w-fit rounded border border-transparent bg-primary px-3 py-1 text-white transition-colors duration-200 ease-in-out hover:bg-secondary"
               >
                 Sign in
               </Link>
