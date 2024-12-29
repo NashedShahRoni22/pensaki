@@ -21,7 +21,7 @@ const featsAndTools = [
       "PDF Converter for seamless document handling",
       "Access to all Pensaki SaaS software",
     ],
-    link: "https://omada-clasico.org/",
+    link: "https://pensaki.org/",
   },
   {
     image: pdfConvert,
@@ -34,7 +34,7 @@ const featsAndTools = [
       "Cost-effective solution",
       "Click here to know more",
     ],
-    link: "/pensakipdf",
+    link: "https://pensaki.org/",
   },
   {
     image: cloudStorage,
@@ -46,7 +46,7 @@ const featsAndTools = [
       "Cost-effective solution",
       "Click here to know more",
     ],
-    link: "/pensakicloud",
+    link: "https://pensaki.org/",
   },
   {
     image: studentAssignWriter,
@@ -60,7 +60,7 @@ const featsAndTools = [
       "translator",
       "Click here to know more",
     ],
-    link: "/pensakistudent",
+    link: "https://pensaki.org/",
   },
   {
     image: cyberSecurity,
@@ -84,7 +84,7 @@ const featsAndTools = [
       "Multi-language support and more features",
       "Click here to know more",
     ],
-    link: "https://omada-clasico.org/",
+    link: "https://omada-clasico.org/omada-hr-payroll",
   },
   {
     image: payslips,

@@ -57,6 +57,7 @@ export default function Product({ product, i }) {
           <div className="mb-9 mt-11 text-left lg:text-left">
             <Link
               to={product.link}
+              target="_blank"
               className="hover:bg-secondary w-fit rounded bg-primary px-4 py-2 text-white transition-all duration-200 ease-linear"
             >
               Buy Now

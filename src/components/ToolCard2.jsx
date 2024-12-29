@@ -31,6 +31,7 @@ export default function ToolCard2({ data }) {
 
       <Link
         to={link}
+        target="_blank"
         className="group-hover:bg-secondary mt-12 flex w-full items-center justify-center rounded-b-lg bg-primary px-4 py-2.5 text-center text-white shadow"
       >
         <p className="flex items-center px-3">

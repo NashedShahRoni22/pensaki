@@ -41,6 +41,7 @@ export default function PricingCard({ product }) {
       <div className="mb-8 mt-3 text-left">
         <Link
           to={product.link}
+          target="_blank"
           className="hover:bg-secondary w-fit rounded bg-primary px-4 py-2 text-white transition-all duration-200 ease-linear hover:outline"
         >
           Buy Now
