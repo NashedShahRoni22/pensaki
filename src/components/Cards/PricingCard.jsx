@@ -40,7 +40,7 @@ export default function PricingCard({ product }) {
 
       <div className="mb-8 mt-3 text-left">
         <Link
-          to={product.link}
+          to={`https://www.bobosohomail.com/email_ins/signUp_email.php?registration_from=${1}&user=${selectedUser || product.users[0]}&package=${product.type}&price=${currentPrice}`}
           target="_blank"
           className="hover:bg-secondary w-fit rounded bg-primary px-4 py-2 text-white transition-all duration-200 ease-linear hover:outline"
         >
