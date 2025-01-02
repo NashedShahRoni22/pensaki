@@ -9,6 +9,8 @@ export default function Product({ product, i }) {
   const currentPrice =
     product.prices[selectedUser] || Object.values(product.prices)[0];
 
+    console.log(selectedUser)
+
   return (
     <div className={`${i % 2 === 0 ? "bg-white" : "bg-mint"}`}>
       <div
@@ -56,7 +58,7 @@ export default function Product({ product, i }) {
 
           <div className="mb-9 mt-11 text-left lg:text-left">
             <Link
-              to={product.link}
+              to={`https://www.bobosohomail.com/email_ins/signUp_email.php?registration_from=${1}&user=${selectedUser || product.users[0]}&package=${product.type}&price=${currentPrice}`}
               target="_blank"
               className="hover:bg-secondary w-fit rounded bg-primary px-4 py-2 text-white transition-all duration-200 ease-linear"
             >

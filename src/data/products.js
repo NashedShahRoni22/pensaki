@@ -6,6 +6,7 @@ const products = [
   {
     id: 1,
     title: "Individual Pensaki Pack",
+    type: "individual",
     subtitle: "Pensaki Pack - All-in-One Business Solution",
     features: [
       "All-in-one office study solution with Doc Writer",
@@ -26,12 +27,13 @@ const products = [
     prices: {
       1: "2.00",
     },
+    users: [1],
     image: individualPack,
-    link: "https://www.bobosohomail.com/email_ins/signUp_email.php",
   },
   {
     id: 2,
     title: "Family & Friends Pack",
+    type: "family",
     subtitle:
       "Share the Pensaki Pack with up to 30 family members and friends ",
     features: [
@@ -45,12 +47,13 @@ const products = [
       15: "9.50",
       30: "15.50",
     },
+    users: [15, 30],
     image: familyPack,
-    link: "https://www.bobosohomail.com/email_ins/signUp_email.php",
   },
   {
     id: 3,
     title: "Business Pensaki Pack",
+    type: "business",
     subtitle: "Unlock the Power of All-in-One SaaS Solutions for your Business",
     features: [
       "Comprehensive digital tools designed to enhance business efficiency",
@@ -65,8 +68,8 @@ const products = [
       50: "25.50",
       100: "49.50",
     },
+    users: [1, 50, 100],
     image: businesspack,
-    link: "https://www.bobosohomail.com/email_ins/signUp_email.php",
   },
 ];
 
