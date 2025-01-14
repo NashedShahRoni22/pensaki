@@ -9,7 +9,7 @@ export default function Product({ product, i }) {
   const currentPrice =
     product.prices[selectedUser] || Object.values(product.prices)[0];
 
-    console.log(selectedUser)
+  console.log(selectedUser);
 
   return (
     <div className={`${i % 2 === 0 ? "bg-white" : "bg-mint"}`}>
@@ -21,6 +21,7 @@ export default function Product({ product, i }) {
           <img
             src={product.image}
             alt={product.title}
+            loading="lazy"
             className="h-fit w-full max-w-lg"
           />
         </div>
@@ -31,7 +32,7 @@ export default function Product({ product, i }) {
             {product.title}
           </h2>
 
-          <div className="text-accent mt-4 flex items-center justify-between gap-2 font-medium">
+          <div className="mt-4 flex items-center justify-between gap-2 font-medium text-accent">
             <div className="min-w-fit">
               <span className="text-2xl font-medium md:text-3xl">
                 €{currentPrice}
@@ -41,7 +42,7 @@ export default function Product({ product, i }) {
             {showSelect && (
               <select
                 onChange={(e) => setSelectedUser(e.target.value)}
-                className="text-accent max-w-fit rounded-md border border-red-100 bg-red-50 p-0.5 text-lg outline-none md:px-4 md:py-1.5 md:text-xl"
+                className="max-w-fit rounded-md border border-red-100 bg-red-50 p-0.5 text-lg text-accent outline-none md:px-4 md:py-1.5 md:text-xl"
               >
                 {Object.keys(product.prices).map((userCount) => (
                   <option
@@ -60,7 +61,7 @@ export default function Product({ product, i }) {
             <Link
               to={`https://www.bobosohomail.com/email_ins/signUp_email.php?registration_from=${1}&user=${selectedUser || product.users[0]}&package=${product.type}&price=${currentPrice}`}
               target="_blank"
-              className="hover:bg-secondary w-fit rounded bg-primary px-4 py-2 text-white transition-all duration-200 ease-linear"
+              className="w-fit rounded bg-primary px-4 py-2 text-white transition-all duration-200 ease-linear hover:bg-secondary"
             >
               Buy Now
             </Link>
@@ -69,7 +70,7 @@ export default function Product({ product, i }) {
           <p className="mb-3 font-medium text-primary">Key Features :</p>
           <ul className="space-y-1.5 font-light">
             {product.features.map((feat, i) => (
-              <li key={i} className="text-secondary flex items-center gap-1">
+              <li key={i} className="flex items-center gap-1 text-secondary">
                 <LuDot />
                 {feat}
               </li>

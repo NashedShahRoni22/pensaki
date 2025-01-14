@@ -7,12 +7,13 @@ export default function ToolCard2({ data }) {
   return (
     <Link
       to={link}
-      className="hover:border-secondary group relative flex flex-col rounded-lg border border-primary bg-white"
+      className="group relative flex flex-col rounded-lg border border-primary bg-white hover:border-secondary"
     >
-      <div className="group-hover:border-secondary border-b border-primary pb-5">
+      <div className="border-b border-primary pb-5 group-hover:border-secondary">
         <img
           src={image}
           alt=""
+          loading="lazy"
           className="size-28 rounded-full object-contain"
         />
         <h3 className="flex-1 px-4 text-2xl font-medium capitalize text-primary">
@@ -22,7 +23,7 @@ export default function ToolCard2({ data }) {
 
       <ul className="mt-5 flex-1 space-y-3 px-4">
         {features.map((tool, i) => (
-          <li key={i} className="text-secondary flex gap-1 text-sm">
+          <li key={i} className="flex gap-1 text-sm text-secondary">
             <RxDotFilled className="mt-1 min-w-fit text-base text-black" />
             {tool}
           </li>
@@ -32,7 +33,7 @@ export default function ToolCard2({ data }) {
       <Link
         to={link}
         target="_blank"
-        className="group-hover:bg-secondary mt-12 flex w-full items-center justify-center rounded-b-lg bg-primary px-4 py-2.5 text-center text-white shadow"
+        className="mt-12 flex w-full items-center justify-center rounded-b-lg bg-primary px-4 py-2.5 text-center text-white shadow group-hover:bg-secondary"
       >
         <p className="flex items-center px-3">
           <span className="transition-transform duration-300 group-hover:-translate-x-2">

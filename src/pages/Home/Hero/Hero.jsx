@@ -11,7 +11,7 @@ export default function Hero() {
           <h1 className="text-pretty text-4xl font-medium text-primary lg:text-5xl">
             Craft Document, Collaborate, Share & Convert - all in one place
           </h1>
-          <p className="text-secondary my-6">
+          <p className="my-6 text-secondary">
             Create, collaborate & format Document, Assignment, Disseration,
             Project with ease. From Personal to Professional use, Pensaki
             Blackboard brings Powerfull Features with PDF convertor, agenda,
@@ -21,13 +21,13 @@ export default function Hero() {
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center">
             <Link
               to="https://office.bobosoho.com/login"
-              className="hover:bg-secondary inline-block rounded border border-transparent bg-primary px-4 py-2 text-center text-lg text-white transition-colors duration-200 ease-in-out"
+              className="inline-block rounded border border-transparent bg-primary px-4 py-2 text-center text-lg text-white transition-colors duration-200 ease-in-out hover:bg-secondary"
             >
               Sign in
             </Link>
             <Link
               to="/products"
-              className="hover:border-secondary hover:bg-secondary group inline-flex items-center justify-center gap-1 rounded border border-primary py-2 pl-4 pr-3 text-lg capitalize text-primary transition-colors duration-200 ease-in-out hover:text-white"
+              className="group inline-flex items-center justify-center gap-1 rounded border border-primary py-2 pl-4 pr-3 text-lg capitalize text-primary transition-colors duration-200 ease-in-out hover:border-secondary hover:bg-secondary hover:text-white"
             >
               <p className="flex items-center px-3">
                 <span className="transition-transform duration-300 group-hover:-translate-x-2">
@@ -44,6 +44,7 @@ export default function Hero() {
           <img
             src={heroImg}
             alt="pensaki blackboard"
+            loading="lazy"
             className="h-fit w-4/5 object-cover"
           />
         </div>

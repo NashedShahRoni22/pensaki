@@ -93,7 +93,6 @@ export default function Navbar() {
           <div className="fixed left-0 top-0 h-full w-full bg-white md:px-14 lg:hidden">
             <div className="flex items-center justify-between bg-primary px-5 py-3">
               <Link to={"/"} className="flex items-center gap-3 text-mint">
-                {/* <img src={logo} className="h-16" alt="pensaki blackboard" /> */}
                 <span className="font-meow-script text-4xl">Pensaki</span>
                 <span className="text-[25px] text-accent">Blackboard</span>
               </Link>

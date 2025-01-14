@@ -170,39 +170,39 @@ export default function Contact() {
     <section className="mx-5 py-10 md:container md:mx-auto md:py-20">
       <div className="grid gap-8 md:gap-16 lg:grid-cols-2">
         <div className="flex flex-col gap-6">
-          <h5 className="text-accent text-2xl font-medium">Contact Us</h5>
+          <h5 className="text-2xl font-medium text-accent">Contact Us</h5>
           <p className="mb-4 text-xl font-semibold text-primary md:text-3xl">
             To make requests for further information, contact us via our social
             channels
           </p>
           <div className="flex gap-5">
-            <div className="text-accent flex h-fit w-fit items-center justify-center rounded-xl bg-mint p-4 shadow">
+            <div className="flex h-fit w-fit items-center justify-center rounded-xl bg-mint p-4 text-accent shadow">
               <BiHome className="text-xl md:text-2xl" />
             </div>
             <div className="flex flex-col gap-2">
               <h5 className="font-medium text-primary">Address</h5>
-              <p className="text-secondary text-sm">
+              <p className="text-sm text-secondary">
                 8 rue de Dublin, 34200, Sète, France
               </p>
             </div>
           </div>
           <div className="flex gap-5">
-            <div className="text-accent flex h-fit w-fit items-center justify-center rounded-xl bg-mint p-4 shadow">
+            <div className="flex h-fit w-fit items-center justify-center rounded-xl bg-mint p-4 text-accent shadow">
               <BiPhone className="text-xl md:text-2xl" />
             </div>
             <div className="flex flex-col gap-2">
               <h5 className="font-medium text-primary">Phone</h5>
-              <p className="text-secondary text-sm">+0033666100010</p>
+              <p className="text-sm text-secondary">+0033666100010</p>
             </div>
           </div>
           <div className="flex gap-5">
-            <div className="text-accent flex h-fit w-fit items-center justify-center rounded-xl bg-mint p-4 shadow">
+            <div className="flex h-fit w-fit items-center justify-center rounded-xl bg-mint p-4 text-accent shadow">
               <MdEmail className="text-xl md:text-2xl" />
             </div>
             <div className="flex flex-col gap-2">
               <h5 className="font-medium text-primary">Email</h5>
-              <p className="text-secondary text-sm">support@bobosohomail.com</p>
-              <p className="text-secondary text-sm">bfin@bobosohomail.com</p>
+              <p className="text-sm text-secondary">support@bobosohomail.com</p>
+              <p className="text-sm text-secondary">bfin@bobosohomail.com</p>
             </div>
           </div>
         </div>
@@ -211,7 +211,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <h5 className="text-accent text-right text-2xl font-medium">
+      <h5 className="text-right text-2xl font-medium text-accent">
         Send Message
       </h5>
       <p className="mt-3 text-right text-xl font-semibold text-primary md:text-3xl">
@@ -321,7 +321,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="hover:bg-secondary hover:border-secondary group flex items-center justify-center gap-4 rounded border border-primary px-8 py-2 font-semibold text-primary duration-300 ease-linear hover:text-white md:w-fit"
+            className="group flex items-center justify-center gap-4 rounded border border-primary px-8 py-2 font-semibold text-primary duration-300 ease-linear hover:border-secondary hover:bg-secondary hover:text-white md:w-fit"
           >
             {loader ? (
               <Spinner className="h-5 w-5" />
@@ -337,7 +337,7 @@ export default function Contact() {
               <BiCopyright /> 2024 BFIN. BITSS by BFIN. All rights reserved.
             </p>
             <div className="mt-2.5 flex flex-col items-center justify-center gap-2.5">
-              <img src={logo} alt="" />
+              <img src={logo} alt="" loading="lazy" />
               <p className="text-xs">
                 This form is powered by bitss cyber security
               </p>

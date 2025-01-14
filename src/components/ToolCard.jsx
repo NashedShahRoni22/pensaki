@@ -7,17 +7,17 @@ export default function ToolCard({ data }) {
   return (
     <div className="rounded border px-4 pb-8 pt-6">
       <div className="flex items-center gap-2.5 border-b pb-2.5 text-primary">
-        <img src={img} className="size-20" />
+        <img src={img} loading="lazy" className="size-20" />
         <div>
           <h3 className="text-xl font-medium text-primary">{title}</h3>
-          <p className="text-secondary mt-1 max-w-sm font-light">{subTitle}</p>
+          <p className="mt-1 max-w-sm font-light text-secondary">{subTitle}</p>
         </div>
       </div>
 
       <ul className="mt-4 space-y-1.5 font-light">
         <p className="font-medium text-primary">Key Features :</p>
         {features.map((feat, i) => (
-          <li key={i} className="text-secondary flex items-center gap-1">
+          <li key={i} className="flex items-center gap-1 text-secondary">
             <LuDot />
             {feat}
           </li>
@@ -27,7 +27,7 @@ export default function ToolCard({ data }) {
       <div className="mt-10">
         <Link
           to="/features"
-          className="hover:bg-secondary inline-block rounded bg-primary px-6 py-2 font-medium text-white transition duration-200"
+          className="inline-block rounded bg-primary px-6 py-2 font-medium text-white transition duration-200 hover:bg-secondary"
         >
           Explore Details
         </Link>

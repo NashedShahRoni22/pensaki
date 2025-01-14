@@ -10,7 +10,7 @@ export default function Hero({ handleScrollToSection }) {
       }}
       className="flex flex-col items-center justify-center px-5 py-10 md:min-h-screen md:py-20"
     >
-      <p className="text-secondary mb-4 text-center text-xl">
+      <p className="mb-4 text-center text-xl text-secondary">
         Unleash Efficiency with Tools Designed to Simplify Your Work
       </p>
 
@@ -20,7 +20,7 @@ export default function Hero({ handleScrollToSection }) {
 
       <button
         onClick={handleScrollToSection}
-        className="hover:border-secondary hover:bg-secondary group inline-flex items-center gap-1 rounded border border-primary py-2 pl-4 pr-3 text-lg font-medium capitalize text-primary transition-colors duration-200 ease-in-out hover:text-white"
+        className="group inline-flex items-center gap-1 rounded border border-primary py-2 pl-4 pr-3 text-lg font-medium capitalize text-primary transition-colors duration-200 ease-in-out hover:border-secondary hover:bg-secondary hover:text-white"
       >
         <p className="flex items-center px-3">
           <span className="transition-transform duration-300 group-hover:-translate-x-2">
@@ -32,6 +32,7 @@ export default function Hero({ handleScrollToSection }) {
       <img
         src={heroImg}
         alt=""
+        loading="lazy"
         className="mt-20 h-full max-h-80 w-full max-w-4xl rounded-lg object-cover"
       />
     </section>
