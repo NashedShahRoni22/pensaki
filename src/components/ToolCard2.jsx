@@ -5,10 +5,7 @@ import { RxDotFilled } from "react-icons/rx";
 export default function ToolCard2({ data }) {
   const { link, image, title, features } = data;
   return (
-    <Link
-      to={link}
-      className="group relative flex flex-col rounded-lg border border-primary bg-white hover:border-secondary"
-    >
+    <div className="group relative flex flex-col rounded-lg border border-primary bg-white hover:border-secondary">
       <div className="border-b border-primary pb-5 group-hover:border-secondary">
         <img
           src={image}
@@ -42,6 +39,6 @@ export default function ToolCard2({ data }) {
         </p>
         <HiChevronRight className="-ml-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       </Link>
-    </Link>
+    </div>
   );
 }
