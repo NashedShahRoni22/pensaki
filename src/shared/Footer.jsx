@@ -1,29 +1,7 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
-  const hostingProducts = [
-    {
-      name: "Fully Managed Dedicated Server",
-      link: "/fully-managed-dedicated-server",
-    },
-    {
-      name: "Fully Managed Virtual Dedicated Server",
-      link: "/fully-managed-virtual-dedicated-server",
-    },
-    {
-      name: "Self Managed Dedicated Server",
-      link: "/self-managed-dedicated-server",
-    },
-    {
-      name: "Fully Managed Pure Website Hosting",
-      link: "fully-managed-pure-web-hosting",
-    },
-    {
-      name: "Self Managed Pure Website Hosting",
-      link: "/self-managed-pure-web-hosting",
-    },
-  ];
-
   const Products = [
     {
       name: "Bitss Cyber Security",
@@ -86,6 +64,20 @@ export default function Footer() {
     },
   ];
 
+  const [hostingProducts, setHostingProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchHostingProducts = async () => {
+      const res = await fetch(
+        "https://hpanel.bfinit.com/api/product/categories",
+      );
+      const data = await res.json();
+      setHostingProducts(data.data);
+    };
+
+    fetchHostingProducts();
+  }, []);
+
   return (
     <footer>
       {/* email joining section */}
@@ -143,8 +135,9 @@ export default function Footer() {
             <div className="ml-2 mt-4 flex flex-col gap-2">
               {hostingProducts.map((product, i) => (
                 <Link
-                  to={product.link}
                   key={i}
+                  to={`https://bfinit.com/hosting-products/${product.id}`}
+                  target="_blanck"
                   className="flex gap-2.5 transition-all hover:text-accent"
                 >
                   {product.name}
