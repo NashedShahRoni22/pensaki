@@ -84,7 +84,7 @@ const featsAndTools = [
       "Multi-language support and more features",
       "Click here to know more",
     ],
-    link: "https://omada-clasico.org/omada-hr-payroll",
+    link: "https://omada-clasico.com/omada-hr-payroll",
   },
   {
     image: payslips,
@@ -97,7 +97,7 @@ const featsAndTools = [
       "Cost-effective solution",
       "Click here to know more",
     ],
-    link: "https://omada-clasico.org/clasico-payslip/",
+    link: "https://omada-clasico.com/clasico-payslip/",
   },
   {
     image: accounting,
