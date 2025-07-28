@@ -71,7 +71,7 @@ const featsAndTools = [
       "Advanced website contact form with built-in spam blocking",
       "Click here to know more",
     ],
-    link: "https://bitss.fr/",
+    link: "https://bitss.one/",
   },
   {
     image: hrPayroll,

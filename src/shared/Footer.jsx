@@ -5,7 +5,7 @@ export default function Footer() {
   const Products = [
     {
       name: "Bitss Cyber Security",
-      link: "https://bitss.fr/",
+      link: "https://bitss.one/",
     },
     {
       name: "Pensaki Blackboard",
